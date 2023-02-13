@@ -1,0 +1,35 @@
+.container {
+  width: 1000px;
+  border: 1px solid gray;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  min-width: 200px;
+  max-width: 300px;
+  height: 200px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.block:nth-child(even) {
+  background-color: yellow;
+}
+
+.block:nth-child(odd) {
+  background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .block {
+    min-width: 450px;
+  }
+  .container {
+    background-color: aqua;
+  }
+}
+
+@media screen and (max-width) {
+}
